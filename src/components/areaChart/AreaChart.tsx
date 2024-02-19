@@ -1,12 +1,12 @@
-"use client"
-import {ChartContext} from '@/context/ChartContext';
-import { AreaChart } from '@tremor/react';
-import { useContext } from 'react';
+"use client";
+import { ChartContext } from "@/context/ChartContext";
+import { AreaChart } from "@tremor/react";
+import { useContext } from "react";
 const dataFormatter = (number: any) =>
   `$${Intl.NumberFormat("us").format(number).toString()}`;
 
 function AreaChartHero() {
-    const { data } = useContext(ChartContext)!;
+  const { data } = useContext(ChartContext)!;
   return (
     <AreaChart
       className="h-80"

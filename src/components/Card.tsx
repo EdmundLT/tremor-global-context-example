@@ -15,7 +15,7 @@ export default function NumberCard() {
         ${convertNumberToString(sales)}
       </p>
       <p className="mt-4 flex items-center justify-between text-tremor-default text-tremor-content dark:text-dark-tremor-content">
-        <span>{percentage.toFixed(2)}% of annual target</span>
+        <span>{percentage.toFixed(0)}% of annual target</span>
         <span>${convertNumberToString(annualTarget)}</span>
       </p>
       <ProgressBar value={percentage} className="mt-2" />

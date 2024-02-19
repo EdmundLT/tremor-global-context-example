@@ -4,7 +4,6 @@ import {
   Dispatch,
   SetStateAction,
   createContext,
-  useEffect,
   useState,
 } from "react";
 
@@ -23,7 +22,6 @@ export const ChartContext = createContext<IChartContext | undefined>(undefined);
 
 export default function ChartContextProvider(props: any) {
   const [data, setData] = useState<ChartData[]>(props.data);
-
   return (
     <ChartContext.Provider value={{ data, setData }}>
       {props.children}
